@@ -1,4 +1,4 @@
-# basic-structure-with-sass
+# merlinispotions
 
 To run: 
 `npm install` and `npm start`

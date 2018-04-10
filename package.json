@@ -1,0 +1,31 @@
+{
+  "name": "merlinispotions",
+  "version": "1.0.0",
+  "description": "To run: `npm install` and `npm start`",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass assets/sass/app.scss -o dist/ --source-map true",
+    "dev": "rerun-script",
+    "lite": "lite-server",
+    "start": "concurrently \"npm run dev\"  \"npm run lite\""
+  },
+  "watches": {
+    "build-css": "assets/sass/**/**/*.scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camila93/merlinIsPotions.git"
+  },
+  "author": "Camila Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camila93/merlinIsPotions/issues"
+  },
+  "homepage": "https://github.com/camila93/merlinIsPotions#readme",
+  "devDependencies": {
+    "concurrently": "^2.2.0",
+    "lite-server": "^2.2.2",
+    "node-sass": "^3.8.0",
+    "rerun-script": "^0.6.0"
+  }
+}

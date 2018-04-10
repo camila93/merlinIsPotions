@@ -1,11 +1,156 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <title>Merlin's Potions</title>
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="dist/app.css">
     </head>
 
-    <body>
-        <h1>Test</h1>
+    <body id="app">
+        <div class="header">
+            <div class="header__logo">
+                <div class="header__logo__title">
+                    <p class="header__logo__title__first">Merlin's</p>
+                    <p class="header__logo__title__second">Potions</p>
+                </div>
+                <p class="header__logo__slogan">fine potions since 1026</p>
+            </div>
+            <div class="header__search">
+                <button class="header__search__btn">
+                    <i class="fa fa-search"></i>
+                </button>
+                <input class="header__search__field" type="text" placeholder="Search our stock">
+            </div>
+            <div class="header__tag">
+                <p class="header__tag__free">Free shipping</p>
+                <p class="header__tag__text">on olders over $50</p>
+            </div>
+            <div class="header__bag">
+                <img class="header__bag__image" src="images/icons/cauldron.png">
+                <p class="header__bag__text">Bag:</p>
+                <span class="header__bag__quantity">1</span>
+            </div>
+        </div>
+
+        <div class="menu">
+            <ul class="menu__options">
+                <li class="menu__options__item">Potions</li>
+                <li class="menu__options__item">Ingredients</li>
+                <li class="menu__options__item">Books</li>
+                <li class="menu__options__item">Suppliers</li>
+                <li class="menu__options__item">Charms</li>
+                <li class="menu__options__item__clearance">Clearance!</li>
+            </ul>
+            <div class="menu__users">
+                <p class="menu__users__text">Sign In</p>
+                <p class="menu__users__text menu__users__text__or">or</p>
+                <p class="menu__users__text">Sign Up</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <p class="content__title">Potions</p>
+            <div class="content__grid">
+                <div class="content__grid__product">
+                    <div class="content__grid__product__image">
+                        <img src="images/products/aging-potion.png">
+                    </div>
+                    <div class="content__grid__product__description">
+                        <p class="content__grid__product__description__name" id="name">Aging Potion - </p>
+                        <p class="content__grid__product__description__price" id="name">$29.99</p>
+                    </div>
+                </div>
+                <div class="content__grid__product">
+                    <div class="content__grid__product__image">
+                        <img src="images/products/aging-potion.png">
+                    </div>
+                    <div class="content__grid__product__description">
+                        <p class="content__grid__product__description__name" id="name">Aging Potion - </p>
+                        <p class="content__grid__product__description__price" id="name">$29.99</p>
+                    </div>
+                </div>
+                <div class="content__grid__product">
+                    <div class="content__grid__product__image">
+                        <img src="images/products/aging-potion.png">
+                    </div>
+                    <div class="content__grid__product__description">
+                        <p class="content__grid__product__description__name" id="name">Aging Potion - </p>
+                        <p class="content__grid__product__description__price" id="name">$29.99</p>
+                    </div>
+                </div>
+                <div class="content__grid__product">
+                    <div class="content__grid__product__image">
+                        <img src="images/products/aging-potion.png">
+                    </div>
+                    <div class="content__grid__product__description">
+                        <p class="content__grid__product__description__name" id="name">Aging Potion - </p>
+                        <p class="content__grid__product__description__price" id="name">$29.99</p>
+                    </div>
+                </div>
+                <div class="content__grid__product">
+                    <div class="content__grid__product__image">
+                        <img src="images/products/aging-potion.png">
+                    </div>
+                    <div class="content__grid__product__description">
+                        <p class="content__grid__product__description__name" id="name">Aging Potion - </p>
+                        <p class="content__grid__product__description__price" id="name">$29.99</p>
+                    </div>
+                </div>
+                <div class="content__grid__product">
+                    <div class="content__grid__product__image">
+                        <img src="images/products/aging-potion.png">
+                    </div>
+                    <div class="content__grid__product__description">
+                        <p class="content__grid__product__description__name" id="name">Aging Potion - </p>
+                        <p class="content__grid__product__description__price" id="name">$29.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer__content">
+                <div class="footer__content__links">
+                    <ul class="footer__content__links__list">
+                        <li class="footer__content__links__list__item">COMPANY</li>
+                        <li class="footer__content__links__list__item">CONTACT US</li>
+                        <li class="footer__content__links__list__item">SHIPPING</li>
+                        <li class="footer__content__links__list__item">RETURNS</li>
+                        <li class="footer__content__links__list__item">CAREERS</li>
+                    </ul>
+                    <div class="footer__content__links__icons">
+                        <ul class="footer__content__links__icons__list">
+                            <li class="footer__content__links__icons__list__item">
+                                <span class="fa fa-facebook-f"></span>
+                            </li>
+                            <li class="footer__content__links__icons__list__item">
+                                <span class="fa fa-twitter"></span>
+                            </li>
+                            <li class="footer__content__links__icons__list__item">
+                                <span class="fa fa-pinterest-p"></span>
+                            </li>
+                            <li class="footer__content__links__icons__list__item">
+                                <span class="fa fa-tumblr"></span>
+                            </li>
+                            <li class="footer__content__links__icons__list__item">
+                                <span class="fa fa-google-plus"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__content__newsletter">
+                    <p class="footer__content__newsletter__signup">Sign up for our Newsletter</p>
+                    <p class="footer__content__newsletter__discounts">Sign up for newsletter & get exclusive discounts!</p>
+                    <div class="footer__content__newsletter__form">
+                        <input class="footer__content__newsletter__form__email" type="text" placeholder="Enter your email">
+                        <button class="footer__content__newsletter__form__btn">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__content__rights">
+                <p class="footer__content__rights__text">© 2018 Merlin's Potions. All Rights Reserved.</p>
+            </div>
+        </div>
     </body>
+
 </html>

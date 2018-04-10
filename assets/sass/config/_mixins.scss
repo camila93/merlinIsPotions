@@ -1,0 +1,5 @@
+@mixin media-q($screen: $screen-sm, $type: min) {
+    @media screen and (#{$type}-width: $screen) {
+        @content;
+    }
+}

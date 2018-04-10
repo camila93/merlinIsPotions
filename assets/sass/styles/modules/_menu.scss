@@ -1,0 +1,56 @@
+.menu {
+    background-color: $color-purple--base;
+    color: $color-white--base;
+
+    height: 90px;
+    padding: 0px 35px;
+
+    display: flex;
+    justify-content: space-between;
+
+    &__options {
+        display: flex;
+        align-items: center;
+
+        font-size: 20px;
+
+        &__item {
+            display: flex;
+            padding: 5px 25px;
+
+            font-family: $fontOpen;
+            font-style: italic;
+
+            &::after {
+                content: '';
+                margin: 10px;
+                border-left: 7px solid transparent;
+                border-right: 7px solid transparent;
+                border-top: 7px solid $color-white--base;
+            }
+
+            &__clearance {
+                background-color: darken($color-purple--base, 10);
+                padding: 15px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    &__users {
+        display: flex;
+        align-items: center;
+
+        &__text {
+            padding: 5px 10px;
+    
+            font-family: $fontOpen;
+            font-style: italic;
+            font-size: 20px;
+
+            &__or {
+                color: lighten($color-purple--base, 30);
+            }
+        }
+    }
+}

@@ -1,0 +1,107 @@
+.footer {
+    background-color: $color-grey--base;
+    padding: 35px 40px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        &__links {
+            width: 40%;
+
+            &__list {
+                display: flex;
+                flex-wrap: wrap;
+
+                &__item {
+                        padding: 5px 25px;
+                        color: $color-red--base;
+                        font-size: 20px;
+                    }
+            }
+
+            &__icons {
+                padding: 10px;
+
+                &__list {
+                    display: flex;
+
+                    &__item {
+                        background-color: $color-purple--base;
+                        color: $color-grey--base;
+                        font-size: 35px;
+                        
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        width: 50px;
+                        height: 50px;
+                        margin: 15px;
+                        border-radius: 100%;
+
+                        &:hover {
+                            transform: rotateY(1turn);
+                            transition: 1s;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__newsletter {
+            background-color: $color-white--base;
+            border-radius: 5px;
+            padding: 20px;
+
+             &__signup, &__discounts {
+                 font-family: $fontOpen;
+                 font-size: 18px;
+                 line-height: 35px;
+            }
+            &__signup {
+                font-style: italic;
+            }
+
+            &__form {
+                padding: 10px 0px;
+
+                &__email {
+                    padding: 5px 10px;
+                    width: 250px;
+
+                    font-family: $fontOpen;
+                    font-size: 16px;
+                    color: darken($color-grey--base, 20);
+                    
+                    border: 1px solid $color-black--base;
+                    border-radius: 5px;
+                    height: 35px;
+                }
+                &__btn {
+                    background-color: $color-red--base;;
+                    padding: 5px 10px;
+                    margin-left: 5px;
+
+                    font-family: $fontOpen;
+                    font-size: 17px;
+                    color: $color-white--base;
+                    
+                    border: 1px solid $color-red--base;
+                    border-radius: 5px;
+                    height: 35px;
+                }
+            }
+        }
+
+        &__rights {
+            padding: 20px 0px 20px 25px;
+
+            &__text {
+                font-family: $fontOpen;
+                font-size: 20px;
+                color: darken($color-grey--base, 30);
+            }
+        }
+    }
+}

@@ -1,0 +1,121 @@
+$font-size: 14px;
+$font-default: 'Open Sans', sans-serif;
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: $font-size;
+	font-weight: 400;
+
+	-webkit-text-size-adjust: 100%;
+ 	-ms-text-size-adjust: 100%;
+ 	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	font-family: $font-default;
+	-webkit-font-smoothing: antialiased;
+}
+
+strong {
+    color: #3e3e3e;
+}
+
+input:not([type="submit"]),
+textarea,
+p,
+h1, h2, h3, h4, h5,
+span {
+   user-select: auto;
+
+   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+
+   -webkit-touch-callout: auto;
+}
+
+input,
+input[type="range"] {
+	outline: none;
+
+	&:active, &:focus {
+		outline: none;
+	}
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+a, a:hover, a:active, a:visited {
+	cursor: pointer;
+	color: inherit;
+    text-decoration: none;
+}
+
+a, button {
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+p { font-size: 1rem; }
+h1 { font-size: 3rem; }
+h2 { font-size: 2.25rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.25rem;}
+h5 { font-size: 1rem; }
+h6 { font-size: 0.75rem; }
+
+///Forms
+
+form {
+    margin: 3px;
+}
+
+form input, textarea {
+    border: none;
+    background-color: #282828;
+    border-radius: 8px;
+    width: 100%;
+    padding: 15px 0px 15px 10px;
+    box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025);
+    color: #666666;
+
+    @include media-q {
+        padding: 22px 0px 22px 10px;
+        font-size: 16px;
+    }
+
+    &:focus, &:focus {
+        background-color: #181818;
+
+    }
+}

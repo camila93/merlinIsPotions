@@ -14,6 +14,10 @@
 
         font-size: 20px;
 
+        @media screen and (max-width: $screen-lg) {
+            font-size: 16px;
+        }
+
         &__item {
             display: flex;
             padding: 5px 25px;
@@ -48,9 +52,36 @@
             font-style: italic;
             font-size: 20px;
 
+            @media screen and (max-width: $screen-lg) {
+                font-size: 16px;
+            }
+
             &__or {
                 color: lighten($color-purple--base, 30);
             }
         }
+    }
+
+    @media screen and (max-width: $screen-mg) {
+        display: none;
+    }
+}
+
+.tag-mobile {
+    display: none;
+
+    @media screen and (max-width: $screen-mg) {
+        display: block;
+    }
+
+    &__text {
+        font-size: 20px;
+        font-style: italic;
+        text-align: center;
+        
+        background-color: $color-grey--base;
+        color: darken($color-grey--base, 50);
+
+        padding: 10px 0;
     }
 }

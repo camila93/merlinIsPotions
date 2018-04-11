@@ -5,6 +5,10 @@
         font-family: $fontOswald;
         font-size: 30px;
         color: $color-black--base;
+
+        @media screen and (max-width: $screen-mg) {
+            text-align: center;
+        }
     }
 
     &__grid {

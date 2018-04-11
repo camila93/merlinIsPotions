@@ -1,4 +1,4 @@
-function openLightBox() {
+function openLightBox(potion) {
     var lightBox = document.getElementById('lightBox');
     var btn = document.getElementById("openProduct");
     var span = document.getElementsByClassName("lightBox__content__close")[0];
@@ -8,40 +8,37 @@ function openLightBox() {
     span.onclick = function () {
         lightBox.style.display = "none";
     }
-
-    requestJson();
+    console.log('potion', potion);
+    
+    // requestJson();
 }
 
+// function requestJson() {
+//     var xmlhttp = new XMLHttpRequest();
+//     var output = '';
 
-function requestJson() {
-    var xmlhttp = new XMLHttpRequest();
-    var saida = '';
+//     xmlhttp.onreadystatechange = function () {
+//         if (this.readyState == 4 && this.status == 200) {
+//             var data = JSON.parse(this.responseText);
+//             potions = data.potions;
+//             products = Object.values(potions);
 
-    xmlhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            var data = JSON.parse(this.responseText);
+//             for (i = 0; i < products.length; i++) {
+//                 output += '<div class="content__grid__product" onclick="openLightBox(products[i].id)">';
+//                 output += '<div class="content__grid__product__image">';
+//                 output += '<img src="images/products/' + products[i].image + '">';
+//                 output += '</div>';
+//                 output += '<div class="content__grid__product__description">';
+//                 output += '<p class="content__grid__product__description__name">' + products[i].name + ' - </p>';
+//                 output += '<p class="content__grid__product__description__price"> $ ' + products[i].price + '</p>';
+//                 output += '</div>';
+//                 output += '</div>';
+//             }
 
-            potions = data.potions;
+//             document.getElementById('openProduct').innerHTML = output;
+//         }
+//     };
 
-            products = Array.from(potions);
-            console.log('potions', potions);
-
-            // for (i = 0; i < 6; i++) {
-            saida += '<div class="content__grid__product">';
-            saida += '<div content__grid__product__image">';
-            saida += '<img src="images/products/' + potions.image + '">';
-            saida += '</div>';
-            saida += '<div content__grid__product__description">';
-            saida += '<p class="content__grid__product__description__name">' + potions.name + '</p>';
-            saida += '<p class="content__grid__product__description__price">' + potions.price + '</p>';
-            saida += '</div>';
-            // }
-
-            document.getElementById('lightBox').innerHTML = saida;
-
-            // document.getElementById("demo").innerHTML = data.name;
-        }
-    };
-    xmlhttp.open("GET", "assets/js/potions.json", true);
-    xmlhttp.send();
-}
+//     xmlhttp.open("GET", "assets/js/potions.json", true);
+//     xmlhttp.send();
+// }

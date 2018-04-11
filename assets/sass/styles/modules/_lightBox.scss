@@ -25,7 +25,7 @@
             display: flex;
             justify-content: flex-end;
         }
-    
+
         &__product {
             display: flex;
             align-items: flex-start;
@@ -36,7 +36,7 @@
                 width: 400px;
                 height: auto;
             }
-    
+
             &__description {
                 font-family: $fontOswald;
                 
@@ -45,17 +45,16 @@
                     line-height: 36px;
                     font-weight: 600;
                 }
-                
+
                 &__text{
                     font-size: 16px;
                     line-height: 26px;
                     font-weight: 300;
                 }
-                
+
                 &__price {
                     color: $color-red--base;
                 }
-
             }
         }
     }
@@ -69,10 +68,15 @@
         color: $color-white--base;
         border-radius: 5px;
         font-size: 30px;
+        cursor: pointer;
 
         width: 150px;
         height: 40px;
         padding: 15px;
         margin: 15px 0;
+
+        &:hover {
+            background-color: lighten($color-red--base, 20);
+        }
     }
 }

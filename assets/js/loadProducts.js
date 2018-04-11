@@ -12,9 +12,7 @@ function requestJson() {
             var products = Object.values(data.potions);
 
             for (i = 0; i < products.length; i++) {
-                console.log('products[]', products[i]);
-                var potion = products[i];
-                output += '<div class="content__grid__product" onclick="openLightBox(' + products[i] + ')">';
+                output += '<div class="content__grid__product" onclick="openLightBox(' + products[i].id + ')">';
                 output += '<div class="content__grid__product__image">';
                 output += '<img src="images/products/' + products[i].image + '">';
                 output += '</div>';
@@ -32,3 +30,5 @@ function requestJson() {
     xmlhttp.open("GET", "assets/js/potions.json", true);
     xmlhttp.send();
 }
+
+

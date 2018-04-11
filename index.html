@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <title>Merlin's Potions</title>
         <link rel="stylesheet" href="dist/app.css">
+        <script src="assets/js/menu.js"></script>
     </head>
 
     <body id="app">
         <div class="header">
-            <div class="header__mobile">
+            <div class="header__mobile" id="menuButton" onclick="showMenu()">
                 <span class="fa fa-bars"></span>
             </div>
             <div class="header__logo">
@@ -55,8 +55,8 @@
             </div>
         </div>
 
-        <div class="menu--mobile">
-            <div class="menu--mobile__header">
+        <div class="menu--mobile overlay" id="menu">
+            <div class="menu--mobile__header" id="menuButton" onclick="showMenu()">
                 <div class="menu--mobile__header__close">
                     <span class="fa fa-times"></span>
                 </div>

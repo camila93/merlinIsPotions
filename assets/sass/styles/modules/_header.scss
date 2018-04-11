@@ -7,12 +7,14 @@
 
     &__mobile {
         display: none;
+
         @media screen and (max-width: $screen-mg) {
             display: block;
             flex: initial;
 
             font-size: 45px;
             padding: 20px;
+            color: $color-purple--base;
         }
     }
 
@@ -129,6 +131,7 @@
             display: none;
         }
     }
+
     &__tag {
         flex: 1;
 
